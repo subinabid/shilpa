@@ -1,0 +1,73 @@
+html, body {margin: 0; height:100%; }
+* {font-family: 'Lato', sans-serif;}
+
+.frame{
+    position: absolute;
+    top: 36px;
+    bottom: 36px;
+    left: 36px;
+    right: 36px;
+    background-image: url("../img/pexels-riccardo-bresciani-307006.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+.content { 
+    position: absolute;
+    top: 36px;
+    bottom: 36px;
+    left: 36px;
+    right: 36px;
+}
+
+.nameplate{
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-left: 32px;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.me{
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    padding-top: 12px;
+    padding-left: 32px;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.about{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-top: 12px;
+    padding-left: 32px;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.about p {margin: 0; padding-bottom: 8px;}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    padding-left: 32px;
+    padding-bottom: 24px;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;   
+}
+
+.footer li { float: left;}
+.footer li::after {content: ""; padding-right: 24px;}
+.footer a {text-decoration: none;}
+.footer a:visited {color: black;}

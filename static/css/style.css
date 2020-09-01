@@ -28,7 +28,7 @@ html, body {
 
 .nameplate{
     position: absolute;
-    top: 30%;
+    top: 40%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     padding-left: 12px;
@@ -38,7 +38,7 @@ html, body {
 
 .me{
     position: absolute;
-    top: 30%;
+    top: 40%;
     transform: translateY(50%);
     padding-top: 12px;
     padding-left: 12px;
@@ -83,8 +83,8 @@ html, body {
         background-image: url("../img/pexels-riccardo-bresciani-307006.jpg");
     }
     .content    { top: 24px; bottom: 24px; left: 24px; right: 24px; }
-    .nameplate  { top: 45%; padding-left: 32px;}
-    .me         { top: 45%; padding-left: 32px;}
+    .nameplate  { top: 50%; padding-left: 32px;}
+    .me         { top: 50%; padding-left: 32px;}
     .footer     { padding-left: 32px; padding-bottom: 24px;
     }
 }

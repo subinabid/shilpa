@@ -1,13 +1,18 @@
-html, body {margin: 0; height:100%; }
-* {font-family: 'Lato', sans-serif;}
+html, body {
+    margin: 0; 
+    height:100%; 
+    font-family: 'Lato', sans-serif;
+}
+
+* { box-sizing: border-box;}
 
 .frame{
     position: absolute;
-    top: 36px;
-    bottom: 36px;
-    left: 36px;
-    right: 36px;
-    background-image: url("../img/pexels-riccardo-bresciani-307006.jpg");
+    top: 12px;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    background-image: url("../img/bg-mobile.jpg");
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.3;
@@ -15,28 +20,28 @@ html, body {margin: 0; height:100%; }
 
 .content { 
     position: absolute;
-    top: 36px;
-    bottom: 36px;
-    left: 36px;
-    right: 36px;
+    top: 12px;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
 }
 
 .nameplate{
     position: absolute;
-    top: 50%;
+    top: 30%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    padding-left: 32px;
+    padding-left: 12px;
     font-weight: bold;
     font-size: 3rem;
 }
 
 .me{
     position: absolute;
-    top: 50%;
+    top: 30%;
     transform: translateY(50%);
     padding-top: 12px;
-    padding-left: 32px;
+    padding-left: 12px;
     font-weight: normal;
     font-size: 2rem;
 }
@@ -56,8 +61,8 @@ html, body {margin: 0; height:100%; }
 .footer{
     position: absolute;
     bottom: 0;
-    padding-left: 32px;
-    padding-bottom: 24px;
+    padding-left: 12px;
+    padding-bottom: 12px;
 }
 
 .footer ul {
@@ -71,3 +76,15 @@ html, body {margin: 0; height:100%; }
 .footer li::after {content: ""; padding-right: 24px;}
 .footer a {text-decoration: none;}
 .footer a:visited {color: black;}
+
+@media only screen and (min-width: 768px) {
+    .frame{
+        top: 24px; bottom: 24px; left: 24px;    right: 24px;
+        background-image: url("../img/pexels-riccardo-bresciani-307006.jpg");
+    }
+    .content    { top: 24px; bottom: 24px; left: 24px; right: 24px; }
+    .nameplate  { top: 45%; padding-left: 32px;}
+    .me         { top: 45%; padding-left: 32px;}
+    .footer     { padding-left: 32px; padding-bottom: 24px;
+    }
+}
